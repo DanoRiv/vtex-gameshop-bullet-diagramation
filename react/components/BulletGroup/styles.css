@@ -1,0 +1,48 @@
+.bullet__container {
+  display: flex;
+  overflow: auto;
+}
+
+.bullet__container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.bullet__container::-webkit-scrollbar-track,
+.bullet__container::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: aqua;
+  border-right: 16px solid transparent;
+}
+
+.bullet__container::-webkit-scrollbar-thumb {
+  background-color: pink;
+}
+
+.bullet__item,
+.bullet__item--image {
+  width: 80px;
+  min-width: 80px;
+}
+
+.bullet__item {
+  margin-right: 15px;
+}
+
+.bullet__item--link {
+  text-decoration: none;
+}
+
+.bullet__item--title {
+  color: black;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+
+  .bullet__item,
+  .bullet__item--title {
+    width: 100px;
+    min-width: 100px;
+  }
+}
